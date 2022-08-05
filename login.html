@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+
+<body>
+    <main>
+        <div class="Enclosure">
+    <script src="login.js"></script>
+        <img src="authwikilogo.jpg.png"/>
+        <p class="first-P">Great to see you here!</p>
+        <div class="login-box">
+        <form>
+            <label class="user">Username or Email</label><br>
+            <input type="email" class="nput" placeholder="Enter username or email address" size="38" /><br>
+            <label class="user">Password</label><br>
+            <input type="password" class="nput" placeholder="Enter password" size="38" id="myInput">
+            <i class="bi bi-eye-slash" id="togglePassword" onclick="myFunction()"></i><br>
+            <input type="checkbox" value="lsRememberMe" id="rememberMe" class="IsRem">
+            <label for="rememberMe" class="remember-me">Remember Password</label><br>
+            <button class="button" onclick="">Login</button> </div>
+
+            <div class="right-line"></div>
+            <p class="continue-with">Continue with</p>
+            <div class="left-line"></div>
+        <div class="contact">
+            <a href="google.com" class="fa fa-google fa-lg"></a>
+            <a href="github.com" class="fa fa-github fa-lg"></a>
+            
+        </div>
+        
+            
+            
+            </form>
+            <p class="lastP">Forgot Password?</p>
+            <p class="lastB">
+                Not a member yet? <a class="lastlink" href="signup.html">Sign up</a>
+            </p>
+        </form>
+    </div>
+    </main>
+
+
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myInput");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            </script>
+ 
+</body>
+
+</html>
