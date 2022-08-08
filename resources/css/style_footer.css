@@ -11,6 +11,7 @@
     --button_active_color :  #FFD791;
     --button_color : #FF9243;
     --button_hover_color : rgba(255, 215, 145, 0.5);
+    scroll-behavior: smooth;
 }
 
 *{
@@ -29,10 +30,10 @@ a{
 }
 
 body{
-    position: relative;
     font-family: 'Manrope';
     font-style: normal;
     background-color: #FFF;
+    overflow-x: hidden;
 }
 
 a:hover{
@@ -108,6 +109,8 @@ footer a:hover{
 .footer_newsletter #site_logo{
     align-self: flex-end;
     margin-bottom: 26px;
+    max-height: 43px;
+    max-width: 175px;
 }
 
 .footer_newsletter p{
@@ -223,19 +226,6 @@ footer hr{
     color: #181818;
 }
 
-
-
-
-@media screen and  (max-width:1000px){
-    #menu_button{
-        display: flex;
-    }
-
-    .nav_menu{
-        display: none;
-    }
-   
-}
 
 @media screen and (max-width:1200px) {
     .footer_content{
@@ -375,39 +365,22 @@ footer hr{
     }
 }
 
-@media screen and (max-width:600px) {
-    
-    .site_logo{
-        order: 2;
-        
+@media screen and (max-width:300px){
+    .footer_content .footer_newsletter #site_logo{
+        height: 27px;
+        width: 90px;
+        margin-bottom: 13px;
     }
-    header div[class=container]{
-        justify-content:flex-start;
-        gap: 87.23px;
-     }
 
-     .side_menu{
-        position: fixed;
-        top: 0;
-        left: 0;
-     }
+    .footer_form #news_form #email_field{
+        width: 80%;
+        height: 100%;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+    }
 
-     @keyframes closebtn_active {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(-360deg);
-        }
-      }
-
-     header{
-        position: static;
-        box-shadow: none;
-     }
-
-     .showcase{
-        margin-top: 55px;
-     }
+    .footer_links:nth-of-type(1){
+        margin-right: 64px;
+    }
 }
-
